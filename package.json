@@ -1,10 +1,10 @@
 {
-  "name": "yaml",
-  "version": "1.0.0-rc.8",
+  "name": "yaml-page-objects",
+  "version": "0.0.0",
   "main": "dist/index.js",
   "license": "ISC",
   "author": "Eemeli Aro <eemeli@gmail.com>",
-  "repository": "github:eemeli/yaml",
+  "repository": "github:canvaspixels/yaml",
   "description": "JavaScript parser and stringifier for YAML",
   "keywords": [
     "YAML",
