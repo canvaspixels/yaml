@@ -30,8 +30,6 @@ export default class ParseContext {
         return Type.BLOCK_LITERAL
       case '{':
         return Type.FLOW_MAP
-      case '[':
-        return Type.FLOW_SEQ
       case '?':
         return !inFlow && Node.atBlank(src, offset + 1)
           ? Type.MAP_KEY
@@ -171,10 +169,6 @@ export default class ParseContext {
       case Type.BLOCK_FOLDED:
       case Type.BLOCK_LITERAL:
         node = new BlockValue(type, props)
-        break
-      case Type.FLOW_MAP:
-      case Type.FLOW_SEQ:
-        node = new FlowCollection(type, props)
         break
       case Type.MAP_KEY:
       case Type.MAP_VALUE:
